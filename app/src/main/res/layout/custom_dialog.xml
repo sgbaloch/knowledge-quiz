@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+
+    android:layout_width="match_parent" android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_alignWithParentIfMissing="true"
+    android:padding="@dimen/_15sdp"
+    android:background="@drawable/shape_rewarddialog"
+    android:gravity="center">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        >
+
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Want to continue? Watch this video ad to gain 2 extra lives"
+        android:textSize="@dimen/_15ssp"
+        android:textColor="#ffff"
+        android:gravity="center"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/_5sdp"
+        android:layout_marginTop="@dimen/_8sdp"
+        >
+
+        <Button
+            android:id="@+id/btn_watch"
+            android:layout_width="@dimen/_90sdp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/shape_button_dialog_green"
+            android:text="Watch"
+            android:textSize="@dimen/_11ssp"
+            android:textColor="#ffff"
+            android:layout_margin="@dimen/_5sdp"
+            android:textAllCaps="false"
+            />
+
+        <Button
+            android:id="@+id/btn_thanks"
+            android:layout_width="@dimen/_90sdp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/shape_button_dialog_red"
+            android:textSize="@dimen/_11ssp"
+            android:text="No, Thanks"
+            android:textColor="#ffff"
+            android:layout_margin="@dimen/_5sdp"
+            android:textAllCaps="false"/>
+
+    </LinearLayout>
+
+
+</LinearLayout>

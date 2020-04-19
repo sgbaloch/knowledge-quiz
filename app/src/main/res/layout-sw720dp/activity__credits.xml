@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.agbalochenterprizes.sgbaloch.knowledgequiz2018.Activity_Credits"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1.6"
+        android:layout_margin="@dimen/_10sdp"
+        android:background="@drawable/shape_layout">
+
+        <TextView
+            android:id="@+id/txtCredits"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+
+            android:textColor="#FFFFFF"
+            android:textSize="@dimen/_35ssp"
+            android:textStyle="bold"
+            android:fontFamily="cursive"
+            android:text="Credits"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="6.5"
+        android:padding="@dimen/_15sdp">
+
+        <TextView
+            android:id="@+id/txtCredit_list"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_15sdp"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="@dimen/_10sdp"
+
+            android:textSize="@dimen/_11ssp"
+            android:textColor="#FFFFFF"
+            android:text="@string/credit_list"/>
+
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1.5">
+
+        <Button
+            android:id="@+id/btnBack"
+            android:layout_width="@dimen/_150sdp"
+            android:layout_height="@dimen/_28sdp"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/shape_start"
+
+            android:text="Go Back"
+            android:textSize="@dimen/_10ssp"
+            android:textColor="#82B1FF"/>
+
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.agbalochenterprizes.sgbaloch.knowledgequiz2018.Activity_Result"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1.6"
+        android:layout_margin="@dimen/_10sdp"
+        android:background="@drawable/shape_layout">
+
+        <TextView
+            android:id="@+id/txtResult"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+
+            android:textColor="#FFFFFF"
+            android:textSize="@dimen/_37ssp"
+            android:textStyle="bold"
+            android:fontFamily="cursive"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="6"
+        android:padding="@dimen/_15sdp">
+
+        <TextView
+            android:id="@+id/txtComments"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_15sdp"
+            android:layout_centerHorizontal="true"
+
+            android:textSize="@dimen/_25ssp"
+            android:textColor="#82B1FF"
+            android:textStyle="bold"
+            android:fontFamily="cursive"
+            android:textAlignment="center"
+            android:text="Your Score is:"/>
+
+        <TextView
+            android:id="@+id/txtScore"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txtComments"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/_5sdp"
+
+            android:textSize="@dimen/_50ssp"
+            android:textColor="#FFFFFF"
+            android:text="155"
+            />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2">
+        <com.google.android.gms.ads.AdView
+            xmlns:ads="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/adView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="@dimen/_3sdp"
+            ads:adSize="BANNER"
+
+            ads:adUnitId="ca-app-pub-6187255009918042/5484412854">
+        </com.google.android.gms.ads.AdView>
+
+        <!--ads:adUnitId="ca-app-pub-3940256099942544/6300978111"-->
+
+        <Button
+            android:id="@+id/btn_back"
+            android:layout_width="@dimen/_170sdp"
+            android:layout_height="@dimen/_30sdp"
+            android:layout_centerHorizontal="true"
+            android:layout_above="@id/adView1"
+            android:layout_marginBottom="@dimen/_12sdp"
+            android:background="@drawable/shape_start"
+
+            android:text="Go Back"
+            android:textSize="@dimen/_12ssp"
+            android:textColor="#82B1FF"/>
+
+    </RelativeLayout>
+
+</LinearLayout>

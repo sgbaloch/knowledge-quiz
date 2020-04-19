@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.agbalochenterprizes.sgbaloch.knowledgequiz2018.Activity_Quiz"
+    android:orientation="vertical"
+
+    android:keepScreenOn="true">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1.3">
+
+        <ImageView
+            android:id="@+id/img_heart"
+            android:layout_width="@dimen/_27sdp"
+            android:layout_height="@dimen/_27sdp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:layout_marginRight="-5dp"
+            android:src="@drawable/thunder"
+            tools:ignore="ContentDescription" />
+
+        <TextView
+            android:id="@+id/noflives"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/img_heart"
+            android:layout_centerVertical="true"
+
+
+            android:textStyle="bold"
+            android:textSize="@dimen/_13ssp"
+            android:textColor="#FFFFFF"/>/>
+
+        <TextView
+            android:id="@+id/textview_score"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/_10sdp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+
+            android:text="TextView"
+            android:textStyle="bold"
+            android:textSize="@dimen/_13ssp"
+            android:textColor="#FFFFFF"/>
+
+        <TextView
+            android:id="@+id/txtTimer"
+            android:layout_width="@dimen/_48sdp"
+            android:layout_height="@dimen/_48sdp"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/shape_timer2"
+            android:gravity="center"
+
+            android:text="TextView"
+            android:textStyle="bold"
+            android:textSize="@dimen/_13ssp"
+            android:textColor="#FFFFFF"
+            />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="3.8"
+        android:layout_margin="@dimen/_8sdp"
+
+        android:background="@drawable/shape_button3">
+
+        <TextView
+            android:id="@+id/textview_qNo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+
+            android:textSize="@dimen/_12ssp"
+            android:textStyle="bold"
+            android:textColor="#82B1FF"
+            />
+
+        <TextView
+            android:id="@+id/textView_question"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textview_qNo"
+            android:layout_margin="@dimen/_10sdp"
+
+            android:text="TextView"
+            android:textSize="@dimen/_11ssp"
+            android:textStyle="bold"
+            android:textColor="#FFFFFF"
+            />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="4.2"
+        android:layout_margin="@dimen/_10sdp">
+
+
+        <Button
+            android:id="@+id/choice1"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_31sdp"
+            android:layout_marginTop="@dimen/_4sdp"
+            android:layout_centerHorizontal="true"
+
+            android:background="@drawable/shape_button3"
+            android:text="Button"
+            android:textColor="#FFFFFF"
+            android:textSize="@dimen/_9ssp" />
+
+        <Button
+            android:id="@+id/choice2"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_31sdp"
+            android:layout_below="@+id/choice1"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/_8sdp"
+
+            android:text="Button"
+            android:background="@drawable/shape_button3"
+            android:textColor="#FFFFFF"
+            android:textSize="@dimen/_9ssp"/>
+
+        <Button
+            android:id="@+id/choice3"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_31sdp"
+            android:layout_below="@+id/choice2"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/_8sdp"
+
+            android:text="Button"
+            android:background="@drawable/shape_button3"
+            android:textColor="#FFFFFF"
+            android:textSize="@dimen/_9ssp"/>
+
+        <Button
+            android:id="@+id/choice4"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_31sdp"
+            android:layout_below="@+id/choice3"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/_8sdp"
+            android:background="@drawable/shape_button3"
+
+            android:text="Button"
+            android:textColor="#FFFFFF"
+            android:textSize="@dimen/_9ssp"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <com.google.android.gms.ads.AdView
+            xmlns:ads="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/adView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="@dimen/_4sdp"
+            ads:adSize="BANNER"
+            ads:adUnitId="ca-app-pub-6187255009918042/6091195470">
+        </com.google.android.gms.ads.AdView>
+
+    </RelativeLayout>
+
+</LinearLayout>

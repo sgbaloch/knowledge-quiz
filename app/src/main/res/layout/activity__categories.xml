@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.agbalochenterprizes.sgbaloch.knowledgequiz2018.Activity_Categories">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height= "0dp"
+        android:layout_weight="1.6"
+
+        android:layout_margin="@dimen/_10sdp"
+        android:background="@drawable/shape_layout">
+        <TextView
+            android:id="@+id/txtCategories"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+
+            android:textColor="#FFFFFF"
+            android:text="@string/categories"
+            android:textSize="@dimen/_37ssp"
+            android:textStyle="bold"
+            android:fontFamily="cursive" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height= "0dp"
+        android:layout_weight="8"
+        android:layout_margin="@dimen/_12sdp">
+
+        <ListView
+            android:id="@+id/listView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:dividerHeight="@dimen/_7sdp"
+            />
+
+    </RelativeLayout>
+
+</LinearLayout>

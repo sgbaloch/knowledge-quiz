@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Knowledge Quiz</string>
+    <string name="title">Knowledge Quiz</string>
+    <string name="subtitle"></string>
+    <string name="btn_start">Start</string>
+    <string name="credits">Credits</string>
+    <string name="categories">Categories</string>
+    <string name="rules">Rules</string>
+    <string name="rules_set">&#9679;\t\tYou have 30 seconds to answer each question\n\n&#9679;\t\tTo earn more points answer as fast as you can\n\n&#9679;\t\t4 correct answers in a row will regain a life.\n\n&#9679;\t\tYou have only 5 lives, so be careful to answer each question.</string>
+    <string name="letsStart">Let\'s Start</string>
+    <string name="credit_list">Knowledge Quiz V.1\n\nProgrammed by: Sarfaraz Ghaffar\nDesigned by: Sarfaraz Ghaffar\n\nMusic: Lost time 0V36M by Setuniman (freesound.org)\nLicensed under Creative Commons Attribution 3.0</string>
+</resources>
